@@ -1,9 +1,10 @@
-from .appliances import Appliance
+from appliances import Appliance
 
 def Dryer(Appliance):
 
     def __init__(self, color, heat_method):
         super.__init__(color, heat_method)
+        self.heat_method = heat_method
 
     def dry_clothes(setting="low"):
         if setting != "low":
